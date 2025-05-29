@@ -1,15 +1,13 @@
 {
   "name": "alternate-assets",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:go": "./scripts/build.sh",
+    "build:npm": "cd npm && npm pack",
+    "build:all": "npm run build:go && npm run build:npm",
+    "publish:npm": "cd npm && npm publish"
   },
   "author": "",
   "license": "MIT",
-  "description": "",
-  "devDependencies": {
-    "@types/node": "^22.15.24",
-    "typescript": "^5.8.3"
-  }
+  "description": "CLI utility to slightly alter image assets to change their checksums while keeping visual changes imperceptible"
 }

@@ -1,0 +1,28 @@
+{
+  "name": "alternate-assets",
+  "version": "1.0.0",
+  "description": "CLI utility to slightly alter image assets to change their checksums while keeping visual changes imperceptible",
+  "bin": {
+    "alternate-assets": "./bin/alternate-assets.js"
+  },
+  "files": [
+    "bin",
+    "README.md"
+  ],
+  "keywords": [
+    "image",
+    "assets",
+    "checksum",
+    "alteration"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12"
+  },
+  "homepage": "https://github.com/sincerely-manny/alternate-assets",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sincerely-manny/alternate-assets.git"
+  }
+}

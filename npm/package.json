@@ -1,6 +1,6 @@
 {
   "name": "alternate-assets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI utility to slightly alter image assets to change their checksums while keeping visual changes imperceptible",
   "bin": {
     "alternate-assets": "./bin/alternate-assets.js"

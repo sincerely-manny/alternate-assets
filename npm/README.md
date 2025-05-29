@@ -92,11 +92,11 @@ npx alternate-assets path/to/image.png -v
 The tool creates imperceptible changes to images by:
 
 1. Applying a very subtle brightness adjustment (0.1%) to the image
-2. For JPEGs: Re-encoding with slightly different quality settings
-3. For PNGs: Using best compression level when saving
+2. For JPEGs: Estimating the original quality and applying a minimal change (±1 quality level)
+3. For PNGs: Detecting file characteristics and selecting an appropriate compression level
 4. For other formats: Using the imaging library's default encoding
 
-These changes are enough to alter the file's checksum without introducing visible artifacts or quality degradation.
+These changes are enough to alter the file's checksum while maintaining the original quality and avoiding visible artifacts or quality degradation.
 
 ## Building and Publishing
 
